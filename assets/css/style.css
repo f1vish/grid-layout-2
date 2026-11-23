@@ -4,71 +4,76 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 16px;
+    color: #35414B;
 }
 
 header {
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem 5%;
-
+    padding: 48px 20px;
 }
 
 .logo {
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
-    text-decoration: none;
-    color: inherit;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .nav-list {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .nav-list a {
     display: flex;
     align-items: center;
-    gap: 5px;
-    flex-wrap: nowrap;
+    gap: 6px;
+    white-space: nowrap;
     text-decoration: none;
     color: inherit;
 }
 
 .nav-list a:not(.no-arrow)::after {
     content: "";
-    width: 12px;
-    height: 12px;
+    width: 8px;
+    height: 8px;
     background-image: url("./../images/arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
+    margin-top: 2px;
 }
 
 .actions {
     display: flex;
-    gap: 10px;
+    gap: 16px;
     align-items: center;
 }
 
 .actions a {
     text-decoration: none;
     color: inherit;
+    padding: 8px 12px;
 }
 
 .actions button {
-    width: 169px;
-    height: 48px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 24px;
+    height: 48;
+    width: 169;
     background-color: #ECE5FF;
     color: #794CFF;
     border: none;
     cursor: pointer;
     border-radius: 4px;
-    font-weight: 500;
 }
 
 .menu {
@@ -78,20 +83,20 @@ header {
 .menu a {
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-size: 10px;
+    font-weight: 400;
     text-transform: uppercase;
-    gap: 10px;
+    gap: 6px;
     text-decoration: none;
-    color: inherit;
 }
 
-@media screen and (max-width: 800px) {
-
+@media screen and (max-width: 900px) {
     header {
-        justify-content: space-between;
+        padding: 32px 16px;
     }
 
-    .actions, .nav-list {
+    .actions, nav {
         display: none;
     }
 
@@ -99,5 +104,7 @@ header {
         display: block;
     }
 
-
+    .logo {
+        font-size: 20px;
+    }
 }
