@@ -1,110 +1,123 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #35414B;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #35414b;
 }
 
 header {
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 48px 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 20px;
 }
 
 .logo {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-list {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .nav-list a {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-    text-decoration: none;
-    color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-list a:not(.no-arrow)::after {
-    content: "";
-    width: 8px;
-    height: 8px;
-    background-image: url("./../images/arrow.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 2px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-image: url("./../images/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2px;
 }
 
 .actions {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .actions a {
-    text-decoration: none;
-    color: inherit;
-    padding: 8px 12px;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 12px;
 }
 
 .actions button {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 16px 24px;
-    height: 48;
-    width: 169;
-    background-color: #ECE5FF;
-    color: #794CFF;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 24px;
+  height: 48;
+  width: 169;
+  background-color: #ece5ff;
+  color: #794cff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 .menu {
-    display: none;
+  display: none;
 }
 
 .menu a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 10px;
-    font-weight: 400;
-    text-transform: uppercase;
-    gap: 6px;
-    text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  gap: 6px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu a::before {
+  content: "";
+  width: 24px;
+  height: 16px;
+  background-image: url("../images/menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 @media screen and (max-width: 900px) {
-    header {
-        padding: 32px 16px;
-    }
+  header {
+    padding: 32px 16px;
+  }
 
-    .actions, nav {
-        display: none;
-    }
+  .actions,
+  nav {
+    display: none;
+  }
 
-    .menu {
-        display: block;
-    }
+  .menu {
+    display: block;
+  }
 
-    .logo {
-        font-size: 20px;
-    }
+  .logo {
+    font-size: 20px;
+  }
 }
