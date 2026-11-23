@@ -32,9 +32,6 @@ header {
 }
 
 .nav-list a {
-  display: flex;
-  align-items: center;
-  gap: 6px;
   white-space: nowrap;
   text-decoration: none;
   color: inherit;
@@ -42,25 +39,22 @@ header {
 
 .nav-list a:not(.no-arrow)::after {
   content: "";
+  display: inline-block;
   width: 8px;
   height: 8px;
+  margin-left: 6px;
+  vertical-align: middle;
   background-image: url("./../images/arrow.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: 2px;
-}
-
-.actions {
-  display: flex;
-  gap: 16px;
-  align-items: center;
 }
 
 .actions a {
   text-decoration: none;
   color: inherit;
   padding: 8px 12px;
+  margin-right: 16px;
 }
 
 .actions button {
@@ -82,21 +76,21 @@ header {
 }
 
 .menu a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: block;
+  text-align: center;
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
-  gap: 6px;
   text-decoration: none;
   color: inherit;
 }
 
 .menu a::before {
   content: "";
+  display: block;
   width: 24px;
   height: 16px;
+  margin: 0 auto 6px;
   background-image: url("../images/menu.svg");
   background-repeat: no-repeat;
   background-position: center;
