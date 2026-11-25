@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -13,6 +17,33 @@ body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn--primary {
+  color: #ffffff;
+  background-color: #794cff;
+}
+
+.btn--soft {
+  color: #794cff;
+  background-color: #ece5ff;
+}
+
+.lead-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #4e5a65;
 }
 
 /* header */
@@ -65,18 +96,10 @@ header {
   margin-right: 16px;
 }
 
-.actions button {
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+.header-btn {
   padding: 16px 24px;
   height: 48px;
   width: 169px;
-  background-color: #ece5ff;
-  color: #794cff;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
 }
 
 .menu {
@@ -164,9 +187,6 @@ main {
 .main-subtitle {
   max-width: 505px;
   margin: 0 auto 24px;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #4e5a65;
 }
 
 .main-form {
@@ -180,7 +200,7 @@ main {
   flex: 1;
   height: 52px;
   padding: 0 24px;
-  font-family: "Inter", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   color: #35414b;
   background-color: #ffffff;
@@ -194,17 +214,10 @@ main {
   color: #97a5b5;
 }
 
-.main-form button {
+.form-btn {
   height: 52px;
   padding: 0 44px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #ffffff;
-  background-color: #794cff;
-  border: none;
   border-radius: 0 4px 4px 0;
-  cursor: pointer;
   white-space: nowrap;
 }
 
@@ -287,9 +300,6 @@ main {
 }
 
 .work-p {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #4e5a65;
   max-width: 316px;
 }
 
@@ -324,22 +334,11 @@ main {
 }
 
 .everyday-text {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #4e5a65;
   margin-bottom: 24px;
 }
 
 .everyday-btn {
-  display: inline-block;
   padding: 14px 24px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #794cff;
-  border-radius: 4px;
 }
 
 .everyday-media {
@@ -469,16 +468,14 @@ main {
   }
 
   .main-title {
-    margin: 0 2rem;
+    margin: 0 2rem 16px;
     font-size: 32px;
     line-height: 1.25;
-    margin-bottom: 16px;
   }
 
   .main-subtitle {
-    margin: 0 2rem;
+    margin: 0 2rem 24px;
     font-size: 16px;
-    margin-bottom: 24px;
   }
 
   .main-form {
@@ -497,7 +494,7 @@ main {
     border-radius: 4px;
   }
 
-  .main-form button {
+  .form-btn {
     width: 100%;
     border-radius: 4px;
   }
@@ -524,7 +521,7 @@ main {
     display: none;
   }
 
-  .work-easier {
+  #work-easier {
     padding-top: 56px;
     padding-bottom: 56px;
   }
@@ -555,14 +552,6 @@ main {
     max-width: 318px;
     margin: 40px auto 0;
     padding: 16px 24px;
-    font-family: "Inter", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #794cff;
-    background-color: #ece5ff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
   }
 
   /* work-everyday */
@@ -584,14 +573,15 @@ main {
     max-width: 318px;
     min-height: 52px;
   }
-  
-  .everyday-title, .everyday-text {
+
+  .everyday-title,
+  .everyday-text {
     margin: 1rem 2.5rem;
   }
 
   /* footer */
 
-  .footer {
+  #footer {
     padding-top: 48px;
   }
 

@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-
     <!-- header -->
 
     <header>
@@ -45,7 +44,7 @@
 
       <div class="actions">
         <a href="#">Log in</a>
-        <button>Get started free</button>
+        <button class="btn btn--soft header-btn">Get started free</button>
       </div>
 
       <div class="menu">
@@ -56,22 +55,23 @@
     </header>
 
     <main>
+      <!-- main-content -->
 
-        <!-- main-content -->
-         
       <section id="main-content">
         <div class="promo">
           <span class="promo-1">Save 90%</span>
           <a href="#" class="promo-2">Get account of $59</a>
         </div>
         <h1 class="main-title">Manage the team everyone wants to be on</h1>
-        <p class="main-subtitle">
+        <p class="lead-text main-subtitle">
           Simple platform that lets you master what great managers do best, as
           develop trust, collaborate, and drive team performance.
         </p>
         <form class="main-form">
           <input type="email" placeholder="name@yourcompany.com" />
-          <button type="submit">Try it free</button>
+          <button type="submit" class="btn btn--primary form-btn">
+            Try it free
+          </button>
         </form>
         <div class="graph">
           <img src="./assets/images/graph.svg" alt="graph" />
@@ -98,7 +98,7 @@
             <article class="work-card">
               <img src="./assets/images/icon-1.svg" alt="1" class="work-icon" />
               <h3 class="work-title">Team surveys &amp; reports</h3>
-              <p class="work-p">
+              <p class="lead-text work-p">
                 Short, anonymous surveys track your team’s needs weekly so you
                 can focus.
               </p>
@@ -107,7 +107,7 @@
             <article class="work-card">
               <img src="./assets/images/icon-2.svg" alt="2" class="work-icon" />
               <h3 class="work-title">Collaborative 1:1</h3>
-              <p class="work-p">
+              <p class="lead-text work-p">
                 Build relationships by planning 1-on-1s and start meetings.
               </p>
             </article>
@@ -115,7 +115,7 @@
             <article class="work-card">
               <img src="./assets/images/icon-3.svg" alt="3" class="work-icon" />
               <h3 class="work-title">Learning center</h3>
-              <p class="work-p">
+              <p class="lead-text work-p">
                 Quickly get solutions tailored to your personal challenges from
                 the manager.
               </p>
@@ -124,7 +124,7 @@
             <article class="work-card hide">
               <img src="./assets/images/icon-4.svg" alt="4" class="work-icon" />
               <h3 class="work-title">Anonymous messaging</h3>
-              <p class="work-p">
+              <p class="lead-text work-p">
                 Develop trust in a safe channel for important conversations.
               </p>
             </article>
@@ -132,7 +132,7 @@
             <article class="work-card hide">
               <img src="./assets/images/icon-5.svg" alt="5" class="work-icon" />
               <h3 class="work-title">Conversation engine</h3>
-              <p class="work-p">
+              <p class="lead-text work-p">
                 Communicate confidently with recommended talking points.
               </p>
             </article>
@@ -140,14 +140,16 @@
             <article class="work-card hide">
               <img src="./assets/images/icon-6.svg" alt="6" class="work-icon" />
               <h3 class="work-title">Exclusives manager</h3>
-              <p class="work-p">
+              <p class="lead-text work-p">
                 Access manager tips, activities and best practices from our team
                 of experts.
               </p>
             </article>
           </div>
 
-          <button type="button" class="work-more">View more benefits</button>
+          <button type="button" class="btn btn--soft work-more">
+            View more benefits
+          </button>
         </div>
       </section>
 
@@ -155,14 +157,16 @@
 
       <section class="work-everyday">
         <div class="container">
-          <div class="everyday-grid">
+          <article class="everyday-grid">
             <div class="everyday-content">
               <h2 class="everyday-title">We work how you work everyday</h2>
-              <p class="everyday-text">
+              <p class="lead-text everyday-text">
                 Since the easiest things to use actually get used, we adapts to
                 the way your team works - not the other way around.
               </p>
-              <a href="#" class="everyday-btn">Get started free</a>
+              <a href="#" class="btn btn--primary everyday-btn"
+                >Get started free</a
+              >
             </div>
 
             <div class="everyday-media">
@@ -172,10 +176,9 @@
                 class="everyday-img"
               />
             </div>
-          </div>
+          </article>
         </div>
       </section>
-
     </main>
 
     <!-- footer -->
@@ -245,6 +248,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
