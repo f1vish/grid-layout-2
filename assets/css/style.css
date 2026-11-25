@@ -291,6 +291,79 @@ main {
   display: none;
 }
 
+.footer {
+  background-color: #1d2830;
+  color: white;
+  padding-top: 80px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding-bottom: 80px;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-apps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer-apps img {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px 0;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy {
+  font-size: 14px;
+  color: #d9dbe1;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-socials img {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
 @media screen and (max-width: 900px) {
   /* header */
 
@@ -425,5 +498,55 @@ main {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  /* footer */
+
+  .footer {
+    padding-top: 48px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-bottom: 48px;
+  }
+
+  .footer-list {
+    display: none;
+  }
+
+  .footer-title {
+    margin-bottom: 0;
+  }
+
+  .footer-arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .footer-arrow::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/arrow-footer.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .footer-apps {
+    margin-top: 20px;
+  }
+
+  .footer-bottom {
+    padding: 32px 0;
+  }
+
+  .footer-socials {
+    display: none;
   }
 }
